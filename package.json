@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "gulp": "~3.2.2",
+    "gulp-livereload": "~0.1.1",
+    "tiny-lr": "0.0.5",
+    "gulp-sass": "~0.2.2",
+    "express": "~3.4.7",
+    "connect-livereload": "~0.3.1",
+    "gulp-concat": "~2.1.7",
+    "ecstatic": "~0.4.13"
+  }
+}

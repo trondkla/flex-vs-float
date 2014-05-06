@@ -1,0 +1,64 @@
+#example {
+  fill: #f00;
+  transition: 1s;
+  transform-origin: 300px 150px;
+  transform: rotate(0);
+  &:hover {
+    fill: #bada55;
+    transform: rotate(0.375turn);
+  }
+}
+#example2 {
+  fill: #f00;
+  transform-origin: 300px 150px;
+  transform: rotate(0);
+  &:hover {
+    transition: 1s;
+    fill: #bada55;
+    transform: rotate(0.375turn);
+  }
+}
+
+#example3 {
+  fill: #f00;
+  transition: {
+    property: all;
+    duration: 1s;
+  };
+  transform-origin: 300px 150px;
+  transform: rotate(0);
+  &:hover {
+    fill: #bada55;
+    transform: rotate(0.375turn);
+  }
+}
+
+#example4 {
+  fill: #f00;
+  transition: {
+    property: all;
+    duration: 1s;
+    delay: 0s;
+  };
+  transform-origin: 300px 150px;
+  transform: rotate(0);
+  &:hover {
+    fill: #bada55;
+    transform: rotate(0.375turn);
+  }
+}
+
+#example5 {
+  fill: #f00;
+  transform-origin: 300px 150px;
+  transform: translateY(0px);
+  transition: {
+    property: transform;
+    duration: 2s;
+    delay: 0s;
+    timing-function: ease;
+  };
+  &.active {
+    transform: translateY(200px);
+  }
+}
