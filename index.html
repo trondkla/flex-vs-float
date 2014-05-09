@@ -163,6 +163,8 @@
                 <section>
                   <h3>Hva er flex?</h3>
 
+                  <p data-fragment="1" class="fragment">Dynamisk Layout Modul for CSS</p>
+
                   <aside class="notes">
                     Flex er en layout modul for CSS som gir en mer effektiv måte å lage fleksible / dynamiske layout hvor man ikke kjenner størrelsene på alle elementene.
                   </aside>
@@ -201,7 +203,7 @@
 
                   </script>
                   <aside class="notes">
-                    En ren display: flex; lignerer veldig på float:left eller display:inline-block
+                    En ren display: flex; lignerer veldig på <b>float:left</b> eller <b>display:inline-block</b>
                   </aside>
                 </section>
 
@@ -248,9 +250,9 @@
                 </section>
 
                 <section id="example-4" class="full-height only-flex">
-                  <h3><code>flex-shrink: <number> (default 1)</code></h3>
+                  <h3><code>flex-shrink: <number> (default 1*)</code></h3>
                   <ul class="flex-add">
-                    <li class="flex-item auto-width" style="flex-grow: 1;">1</li>
+                    <li class="flex-item auto-width" style="flex-grow: 1; flex-shrink: 1;">1</li>
                   </ul>
                   <script>
                       var addContext4 = document.querySelector('#example-4');
@@ -267,6 +269,7 @@
                       });
 
                   </script>
+                  <p>*0 for IE 10/11 ლ(ಠ益ಠლ)</p>
                   <aside class="notes">Shrink forklarer hvor liten ett element kan bli relativt i forhold til de andre. Med grow og shrink kan du da lage elementer som automatisk vokser og krymper for å tilpasse seg i forhold til hverandre</aside>
                 </section>
 
@@ -445,6 +448,29 @@
                 </aside>
                 </section>
 
+                <section>
+                    <h3>Kompabilitet</h3>
+                    <img src="flex-support.png" />
+                    <p>Kilde: <a href="http://caniuse.com/#search=flex">caniuse.com</a></p>
+                </section>
+                <section>
+
+                <h3>Kompabilitet<code>
+        <pre>
+        .flex {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+        </pre>
+                </code></h3>
+
+                <aside class="notes">
+                    Men bruker man mixins i LESS/SASS/whatever er det ikke et problem, da man kan oppdatere syntax fortløpende
+                </aside>
+                </section>
                 <section>
                     <h2>Takk for meg!</h2>
                 </section>
